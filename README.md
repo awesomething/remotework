@@ -1,2 +1,2 @@
 # remotework
-Find remote jobs near you
+Find remote jobs anywhere you are
