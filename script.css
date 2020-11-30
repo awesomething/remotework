@@ -1,0 +1,72 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: flex;
+    text-align: justify;
+}
+
+body {
+    background-image: -webkit-radial-gradient(rgba(31, 28, 28, 0.1), rgba(255, 255, 255, 0.432)), 
+	 url('https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2016/09/21131521/bigstock-Euphoric-Winner-Man-With-A-Tab-101607422-1.jpg');
+    color: black;
+    
+}
+
+.thumbnails{
+    width: 50%;
+    max-width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+#form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#videos, #results {
+    background-color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #FFFF;
+
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+input[type="button"] {
+    font-family: "Ubuntu", sans-serif;
+}
+
+ 
