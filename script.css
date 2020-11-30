@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.main, #frame {
+.main, .frame {
     display: flex;
     flex-direction: flex;
     text-align: justify;
