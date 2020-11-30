@@ -67,7 +67,7 @@ function displayVideos(responseJson) {
     $('#videos').append(
       `<li><h3>${responseJson.items[i].snippet.title}</h3>
       <p>${responseJson.items[i].snippet.description}</p>
-      <img src='${responseJson.items[i].snippet.thumbnails.default.url}' class="thumbnails">
+      
       <iframe width="420" height="315"
         src="https://www.youtube.com/embed/${responseJson.items[i].id.videoId}">
       </iframe> 
