@@ -18,6 +18,7 @@ function displayJobs(responseJson){
     <h3>
     <a href="${item.url}" target="_blank">${item.company_name}</a>
     </h3>
+    <h4>${item.candidate_required_location}</h4>
 
     <button onClick="getVideos('${item.company_name}')">
     Get Videos 

@@ -56,7 +56,6 @@ h2 {
     font-family: 'Lora', serif;
     font-weight: normal;
     font-style: italic;
-    color: #FFFF;
 
 }
 
@@ -69,4 +68,7 @@ input[type="button"] {
     font-family: "Ubuntu", sans-serif;
 }
 
+a {
+    color: black;
+}
  
