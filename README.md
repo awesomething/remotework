@@ -1,2 +1,4 @@
 # YouRemote
-Find remote jobs anywhere you are
+Learn about remote tech jobs and apply from anywhere in the world
+
+
