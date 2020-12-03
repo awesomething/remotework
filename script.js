@@ -13,7 +13,7 @@ function displayJobs(responseJson){
   responseJson.jobs.forEach(item=>{//loops thru the arr
     $(".main").removeClass("hidden");
     $("#results").append(`
-    <div>
+    <div class="item">
     <h2>${item.title}</h2>
     <h3>
     <a href="${item.url}" target="_blank">${item.company_name}</a>
