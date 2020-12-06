@@ -6,7 +6,7 @@
 <h3>Screenshots</h3>
 <il>
 <ul><a href="https://ibb.co/nD0cNdv">Home Screen</a></ul>
-<ul><a href=" https://ibb.co/72cXgk9">Job Results Screen</a></ul>
+<ul><a href="https://ibb.co/72cXgk9">Job Results Screen</a></ul>
 <ul><a href="https://ibb.co/64KK5Xm">Video Results Screen</a></ul>
 <ul><a href="https://ibb.co/JQvqM6b">Play Multiple Videos Screen</a></ul>
  <ul><a href="https://ibb.co/mv71kqJ">Job Apply Screen</a></ul>
