@@ -13,7 +13,7 @@
 </il>
 
 <h3>What is RemoteWork About?</h3>
-<p>This web app lets you search for remote work and learn about the company by watching videos about them before applying. Users can only search videos up to 10 times per day. They can watch the videos within the website and click in a new window to apply.</p>
+<p>This web app lets you search for remote work and learn about the company by watching videos about them before applying. Users can only search videos up to 10 times per day. They can watch the videos within the website and click the available job openings in a new window to apply.</p>
 
 <h3>Technology Stack Used</h3> 
 <p>HTML/CSS/JavaScript/jQuery</p>
