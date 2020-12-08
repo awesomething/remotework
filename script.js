@@ -3,7 +3,10 @@
 function getJobs(username) {
   fetch(`https://remotive.io/api/remote-jobs?search=${username}`)//${}is a template string
     .then(response => response.json())
-    .then(responseJson => displayJobs(responseJson));
+    .then(responseJson => displayJobs(responseJson))
+    .catch(err => {
+      $('#js-error-message').text(`Something went wrong: ${err.message}`);
+    });
 }
 
 function displayJobs(responseJson){
@@ -69,7 +72,7 @@ function displayVideos(responseJson) {
       <p>${responseJson.items[i].snippet.description}</p>
     
       <iframe 
-        width="420" 
+        width="320" 
         height="315"
         src="https://www.youtube.com/embed/${responseJson.items[i].id.videoId}">
       </iframe>
@@ -77,6 +80,9 @@ function displayVideos(responseJson) {
     )};
   //display the results section  
   $('#results').removeClass('hidden');
+  const topSet=document.getElementById("videos").offsetTop;
+  //offSetTop means to take the position of the div or element
+  window.scrollTo(0,topSet);
 };
 
 function getVideos(query, maxResults=10) {

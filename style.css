@@ -92,3 +92,9 @@ a {
     color: black;
 }
  
+@media screen and (max-width: 600px) {
+    .main {
+      background-color: olive;
+      flex-direction: column;
+    }
+  }
