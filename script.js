@@ -13,7 +13,10 @@ function displayJobs(responseJson){
   console.log(responseJson)
 //reads the data from the fetch and creates an html
   $("#results").html("")//clears the results div
-  responseJson.jobs.forEach(item=>{//loops thru the arr
+  responseJson.jobs.forEach((item, index)=>{//loops thru the arr
+    if (index > 10){
+      return 
+    }
     $(".main").removeClass("hidden");
     $("#results").append(`
     <div class="item">
@@ -67,6 +70,7 @@ function displayVideos(responseJson) {
     //array, add a list item to the results 
     //list with the video title, description,
     //and thumbnail
+   
     $('#videos').append(
       `<li><h3>${responseJson.items[i].snippet.title}</h3>
       <p>${responseJson.items[i].snippet.description}</p>
@@ -80,9 +84,6 @@ function displayVideos(responseJson) {
     )};
   //display the results section  
   $('#results').removeClass('hidden');
-  const topSet=document.getElementById("videos").offsetTop;
-  //offSetTop means to take the position of the div or element
-  window.scrollTo(0,topSet);
 };
 
 function getVideos(query, maxResults=10) {
@@ -95,7 +96,11 @@ function getVideos(query, maxResults=10) {
   };
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
-
+  `if(window.viewport_width < 500) {
+  const topSet=document.getElementById("videos").offsetTop;
+  console.log(topSet);
+  //offSetTop means to take the position of the div or element
+  window.scrollTo(0,topSet)} `;
   console.log(url);
 
   fetch(url)
