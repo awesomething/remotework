@@ -5,12 +5,14 @@ function getJobs(username) {
     .then(response => response.json())
     .then(responseJson => displayJobs(responseJson))
     .catch(err => {
-      $('#js-error-message').text(`Something went wrong: ${err.message}`);
+      $('#js-error-message').text(`Something went wrong searching jobs: ${err.message}`);
     });
 }
 
 function displayJobs(responseJson){
   console.log(responseJson)
+  $('#videos').empty();
+  $('#js-error-message').empty();
 //reads the data from the fetch and creates an html
   $("#results").html("")//clears the results div
   responseJson.jobs.forEach((item, index)=>{//loops thru the arr
@@ -64,7 +66,10 @@ function displayVideos(responseJson) {
   // if there are previous results, remove them
   console.log(responseJson);
   $('#videos').empty();
+  $('#js-error-message').empty();
   // iterate through the items array
+  
+  
   for (let i = 0; i < responseJson.items.length; i++){
     // for each video object in the items 
     //array, add a list item to the results 
@@ -102,7 +107,7 @@ function getVideos(query, maxResults=10) {
   //offSetTop means to take the position of the div or element
   window.scrollTo(0,topSet)} `;
   console.log(url);
-
+  
   fetch(url)
     .then(response => {
       if (response.ok) {
